@@ -1,0 +1,80 @@
+.sectionVideo{
+    position: relative;
+    width: 100%;
+    max-height: 74vh;
+    overflow: hidden;
+    padding: 1rem 8.5rem;
+    background-color: whitesmoke;
+  }
+  
+  .publicidadVideoDesktop {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+  }
+
+  .publicidadVideoMobile {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: none;
+  }
+
+
+  @media (max-width: 650px) {
+    .sectionVideo {
+    }
+
+    .publicidadVideoDesktop {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: none;
+    }
+
+    .publicidadVideoMobile {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: flex;
+    }
+
+
+  }
+
+  @media (max-width: 992px) {
+
+
+      .sectionVideo{
+
+        padding: 1rem 5rem;
+      }
+
+    }
+
+  
+
+  
+  @media (max-width: 768px) {
+    .sectionVideo {
+
+      padding: 1rem 4rem;
+    }
+
+  
+
+  }
+  @media (max-width: 550px) {
+    .sectionVideo {
+
+      padding: 1rem 2rem;
+    }
+
+  
+
+  }

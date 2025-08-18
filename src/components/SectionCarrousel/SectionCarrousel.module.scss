@@ -1,0 +1,177 @@
+$background-white: whitesmoke;
+
+
+.sectionCarrousel {
+    background-color: $background-white;
+    height: auto;
+    width: 100%;
+    padding: 1rem 8.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  
+  .sectionCarrousel h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .containerCarrouselCards {
+    height: 100%;
+    width: 100%;
+    gap: 1rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .inactive {
+    opacity: 0;
+  }
+  
+  .active {
+    opacity: 1;
+  }
+  
+  .buttonNextCards {
+    display: flex;
+      height: 32px;
+      right: 3rem;
+      position: absolute;
+      top: 45%;
+      z-index: 999;
+    
+      &:hover {
+        cursor: pointer;
+  
+      }
+  }
+  
+  .buttonPrevCards {
+    display: flex;
+      height: 32px;
+      left: 3rem;
+      position: absolute;
+      top: 45%;
+      z-index: 999;
+    
+      &:hover {
+        cursor: pointer;    
+      }
+  }
+  
+  .cardsCarrousel {
+    min-width: 24%;
+    height: 100%;
+    box-sizing: border-box; 
+    position: relative;
+  }
+  
+
+  
+  .translateNext {
+    animation: translateNext 0.2s ease-in-out;
+  
+  }
+  .translatePrev {
+    animation: translatePrev 0.2s ease-in-out;
+  
+  }
+  
+  @keyframes translateNext {
+    
+  0% { transform: translateX(-100%); }
+  
+  100% { transform: translateX(0); }
+  
+  }
+  
+  @keyframes translatePrev {
+    
+    
+  0% { transform: translateX(100%); }
+  
+  100% { transform: translateX(0); }
+  
+  }
+  
+
+@media (max-width: 992px) {
+  .sectionCarrousel {
+    padding: 1rem 5rem;
+  }
+  .cardsCarrousel {
+    min-width: 23%;
+    height:auto;
+    box-sizing: border-box; 
+    position: relative;
+  }
+  
+
+}
+@media (max-width: 765px) {
+  .sectionCarrousel {
+    padding: 1rem 4rem;
+    height: 70vh;
+  }
+
+  .cardsCarrousel {
+    min-width: 47%;
+    height:auto;
+    box-sizing: border-box; 
+    position: relative;
+  }
+
+  .containerCarrouselCards {
+    overflow: hidden;  
+  }
+
+  .buttonNextCards {
+
+    right: 1rem;
+
+  
+}
+
+.buttonPrevCards {
+
+    left: 1rem;
+
+}
+
+
+  
+}
+
+
+@media (max-width: 550px) {
+  .sectionCarrousel {
+    padding: 1rem 2rem;
+
+  }
+
+  .cardsCarrousel {
+    min-width: 47%;
+    height:auto;
+    box-sizing: border-box; 
+    position: relative;
+  }
+
+  .containerCarrouselCards {
+    overflow: hidden;
+  }
+  
+
+  .buttonNextCards {
+
+      right: 0.3rem;
+
+    
+  }
+  
+  .buttonPrevCards {
+
+      left: 0.3rem;
+
+  }
+}
