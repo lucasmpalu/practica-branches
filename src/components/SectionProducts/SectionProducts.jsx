@@ -65,7 +65,7 @@ const SectionProducts = ({cat}) => {
                   <NavLink to='/products/zapatillas' className={styles.navlink}><li>Zapatillas</li></NavLink>
                   <NavLink to='/products/remeras' className={styles.navlink}><li>Remeras</li></NavLink>
                   <NavLink to='/products/buzos' className={styles.navlink}><li>Buzos</li></NavLink>
-                  <NavLink to='/products/shorts' className={styles.navlink}><li>Shor</li></NavLink>
+                  <NavLink to='/products/shorts' className={styles.navlink}><li>Shorts</li></NavLink>
                   <NavLink to='/products/joggings' className={styles.navlink}><li>Joggings</li></NavLink>
                   <NavLink to='/products/hombre' onClick={() => updateDispatchs('male')} className={styles.navlink}><li>Hombre</li></NavLink>
                   <NavLink to='/products/mujer' onClick={() => updateDispatchs('female')} className={styles.navlink}><li>Mujer</li></NavLink>
