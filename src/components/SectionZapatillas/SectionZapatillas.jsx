@@ -9,7 +9,7 @@ const SectionZapatillas = () => {
 
   return (
     <section className={styles.sectionZapatillas}>
-        <h2>COMPRÁ AHORA LA COLECCIÓN JORDAN 2024</h2>
+        <h2>COMPRÁ AHORA LA COLECCIÓN JORDAN 2025</h2>
         <div className={styles.containerZapatillas}>
              <CardProduct
               key={product[0].id}
